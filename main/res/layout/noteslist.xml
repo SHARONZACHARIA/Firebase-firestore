@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/notescard"
+        android:layout_width="match_parent"
+        android:elevation="16dp"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="1dp"
+        app:cardCornerRadius="8dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/mainview"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="?selectableItemBackground"
+            android:focusable="true">
+
+
+            <TextView
+                android:id="@+id/textheadding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:fontFamily="sans-serif"
+                android:padding="4dp"
+                android:textColor="#000"
+                android:gravity="left"
+                android:text="This is a test heading "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textcontext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="4dp"
+                android:text="This is  a test data to be enetered here"
+                android:maxLines="5"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="4dp"
+                android:text="TimeStamp"
+                android:textColor="@color/time_color" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
